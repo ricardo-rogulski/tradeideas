@@ -1,0 +1,47 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 
+		<property name="hibernate.connection.url">jdbc:mysql://192.175.112.170:3306/tradeid_tradeideas</property>
+		
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/tradeideas</property>
+		 -->
+		<property name="hibernate.connection.url">jdbc:mysql://192.175.112.170:3306/tradeid_tradeideas</property>
+
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- 
+		<property name="hibernate.connection.username">tradeid_rogulski</property>
+		<property name="hibernate.connection.password">R0gulsk12017</property>
+
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+ 		-->
+		<property name="hibernate.connection.username">tradeid_rogulski</property>
+		<property name="hibernate.connection.password">R0gulsk12017</property>
+
+		
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">false</property>
+		
+		<property name="hibernate.c3p0.min_size">10</property>
+		<property name="hibernate.c3p0.max_size">30</property>
+		<property name="hibernate.c3p0.timeout">1800</property>
+		<property name="hibernate.c3p0.idle_test_period">1000</property>
+		<!-- Idle-test_period. Verifica de quanto em quanto tempo checa de deve 
+		fechar a conexão. Ele não testa apenas se chegou o timeout, mas verifica 
+		também as conexões estão com erro ou não. -->
+				
+		<mapping class="br.com.tradeideas.entity.Acao"/>
+		<mapping class="br.com.tradeideas.entity.Serie"/>		
+		<mapping class="br.com.tradeideas.entity.Opcao"/>
+		<mapping class="br.com.tradeideas.entity.Usuario"/>
+		<mapping class="br.com.tradeideas.entity.CotacaoAcao"/>
+		<mapping class="br.com.tradeideas.entity.CotacaoOpcao"/>
+
+	</session-factory>
+</hibernate-configuration>

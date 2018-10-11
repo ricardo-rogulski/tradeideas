@@ -1,0 +1,213 @@
+
+
+html {
+	height:100%;
+	padding:0px;
+	margin:0px;
+	background-color:#FFF;
+}
+
+body {
+	height:100%;
+	width:90%;
+	//max-width: 1200px;  
+	min-width: 200px;
+	margin:0 auto;
+	align:center;
+	font-family:"Quicksand",Tahoma,Arial, Helvetica, sans-serif;
+
+}
+
+#top{
+	display: block;
+	width: auto;
+	height: 80px;
+	background-color:#3D3D3B;
+	border-bottom: 6px solid #FF814C;
+}
+
+
+#porque{
+	display: inline-block;
+	float: left;
+	width: 60%;
+	height: 450px;
+	//background-color:#EFEFEF;
+	//border-bottom: 6px solid #FF814C;
+}
+
+#cadastro{
+	display: inline-block;
+	float: right;
+	width: 35%;
+	height: 450px;
+	background-color:#ccc;
+	//border-bottom: 6px solid #FF814C;
+	//border-right: 6px solid #FF814C;
+	//border-bottom-right-radius: 20px;	
+	color: #FFF;
+}
+
+
+#como{
+	display: block;
+	float: left;	
+	width: 100%;
+	height: 400px;
+	background-color:#EEE;
+	//border-bottom: 2px solid #FF814C;
+}
+
+#quanto{
+	display: block;
+	float: left;	
+	width: 100%;
+	height: 400px;
+	//background-color:#EFEFEF;
+	//border-bottom: 2px solid #FF814C;
+}
+
+#footer{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 80px;
+	background-color:#FF814C;
+}
+
+#logo {
+	display: inline-block;
+	float: left;
+	margin: 0 60px;
+	line-height: 80px;
+	color: #FFF;
+}
+
+
+
+.topLink{
+	font-size: 16px;
+	text-decoration: none;
+	color: #FF814C;
+	margin: 0 20px;
+	line-height: 80px;
+}
+
+.footerLink{
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #3D3D3B;
+	margin: 0 40px;
+	line-height: 80px;
+}
+
+
+#entrar{
+	display: inline-block;
+	float: right;
+	margin: 0 25px;
+	line-height: 80px;
+	height: 80px;
+}
+
+.divmail{
+	float: left;
+	height: 80px;
+}
+
+.divpass{
+	float: left;
+	height: 80px;
+}
+
+
+.divloginbtn{
+	float: left;
+	height: 80px;
+}
+
+.loginBtn {
+	border-radius: 3px;
+	height: 25px;
+	margin: 28px 0 0 0;
+	border: none;
+	background: #FF814C;
+	color: #000;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.loginText {
+	color: #FFF;
+	display: block;
+	float: left;
+	height: 28px;
+	line-height: 40px;
+	font-size: 11px;
+}
+
+.loginMail, .loginPass {
+	border-radius: 3px;
+	display: block;
+	float: left;
+	clear: left;
+	height: 25px;
+	margin-right: 10px;
+	border: none;
+	font-size: 11px;
+	padding: 0 10px;
+}
+
+.cadastrese {
+	display: block;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	position: relative;
+	width: 90%;
+	float: left;
+	margin: 20px 0 0 15px;
+}
+
+.divCadNome, .divCadEmail, .divCadTel {
+	display: block;
+	margin-top: 25px;
+}
+
+.cadText {
+	font-size: 12px;
+	height: 15px;
+	float: left;
+	position: relative;
+	margin: 20px 0 0 15px;
+	color: #000;
+}
+
+
+.cadNome, .cadEmail, .cadTel, .cadSenha, .cadSenhaConf {
+	border-radius: 3px;
+	display: block;
+	float: left;
+	clear: left;
+	height: 25px;
+	margin-left: 15px;
+	border: none;
+	font-size: 12px;
+	width: 85%;
+	padding: 0 10px;
+}
+
+.cadBtn {
+	border-radius: 3px;
+	height: 40px;
+	margin: 30px 0 0 15px;
+	border: none;
+	background: #FF814C;
+	color: #000;
+	font-size: 11px;
+	font-weight: bold;
+	float: left;
+	width: 90%;
+}
+

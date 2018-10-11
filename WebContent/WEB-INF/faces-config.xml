@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+
+	<managed-bean>
+		<managed-bean-name>indexHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.IndexHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>usuarioHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.UsuarioHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>crudAcaoHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.CrudAcaoHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>crudSerieHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.CrudSerieHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>crudOpcaoHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.CrudOpcaoHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>cotacaoAcaoHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.CotacaoAcaoHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>cotacaoOpcaoHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.CotacaoOpcaoHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>travasHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.TravasHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>lancamentoHandler</managed-bean-name>
+		<managed-bean-class>br.com.tradeideas.handler.LancamentoHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+
+
+	<navigation-rule>
+		<display-name>index</display-name>
+		<from-view-id>/index.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>logged</from-outcome>
+			<to-view-id>/cotacaoacao.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+</faces-config>
